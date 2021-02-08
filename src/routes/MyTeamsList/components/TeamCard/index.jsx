@@ -34,6 +34,11 @@ const TeamCard = ({ team }) => {
               },
             },
             {
+              label: (<Link to={`/taas/myteams/${team.id}/access`}>
+                Manage Access
+              </Link>),
+            },
+            {
               separator: true,
             },
             {

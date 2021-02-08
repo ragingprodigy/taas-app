@@ -4,7 +4,6 @@
  * Page for the list of teams.
  */
 import React, { useCallback, useState, useEffect } from "react";
-import _ from "lodash";
 import Page from "components/Page";
 import PageHeader from "components/PageHeader";
 import Input from "components/Input";
