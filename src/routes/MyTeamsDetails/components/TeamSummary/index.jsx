@@ -41,7 +41,7 @@ const TeamSummary = ({ team }) => {
 
       <div styleName="actions">
         <Button
-          routeTo={`/taas/myteams/${team.id}/access`}
+          routeTo={`/taas/myteams/${team.id}/access?details=true`}
           type="secondary"
           size="medium"
         >

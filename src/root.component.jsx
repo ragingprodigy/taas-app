@@ -3,6 +3,7 @@ import { Provider } from "react-redux";
 import { Router, Redirect } from "@reach/router";
 import MyTeamsList from "./routes/MyTeamsList";
 import MyTeamsDetails from "./routes/MyTeamsDetails";
+import ManageAccess from "./routes/ManageAccess";
 import PositionDetails from "./routes/PositionDetails";
 import ResourceBookingDetails from "./routes/ResourceBookingDetails";
 import ResourceBookingForm from "./routes/ResourceBookingForm";
@@ -21,6 +22,7 @@ export default function Root() {
           <Redirect from="/taas" to="/taas/myteams" exact />
           <MyTeamsList path="/taas/myteams" />
           <MyTeamsDetails path="/taas/myteams/:teamId" />
+          <ManageAccess path="/taas/myteams/:teamId/access" />
           <JobDetails path="/taas/myteams/:teamId/positions/:jobId" />
           <JobForm path="/taas/myteams/:teamId/positions/:jobId/edit" />
           <JobForm path="/taas/myteams/:teamId/positions/new" />

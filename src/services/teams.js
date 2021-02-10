@@ -57,3 +57,9 @@ export const patchPositionCandidate = (candidateId, partialCandidateData) => {
     partialCandidateData
   );
 };
+
+export const getTeamMembers = (teamId) => {
+  const query = "fields=id,userId,role,createdAt,updatedAt,createdBy,updatedBy,handle,photoURL,workingHourStart,workingHourEnd,timeZone,email";
+
+  return axios.get(`${config.API.V5}/projects/${teamId}/members?${query}`);
+};
